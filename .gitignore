@@ -1,0 +1,8 @@
+﻿__pycache__/
+.venv/
+*.pyc
+.env
+
+# generados al ejecutar (no son fuente)
+fase2/arboles/demo.png
+informe/informe.html

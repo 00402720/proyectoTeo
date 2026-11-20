@@ -1,0 +1,13 @@
+// Errores semánticos: léxicamente correcto, pero una CFG no puede detectar estos errores.
+int x = 1;
+y = x + 1;              // línea 3: 'y' usada sin declarar
+int x = 2;              // línea 4: redeclaración de 'x' en el mismo ámbito
+x = "texto";            // línea 5: no se puede asignar string a int
+float f = 1.5;
+int i = f;              // línea 7: no se puede asignar float a int
+string s = "a";
+int n = s + 1;          // línea 9: string + int no permitida
+if (x) {                // línea 10: la condición debe ser bool
+    int tmp = 1;
+}
+print tmp;              // línea 13: 'tmp' fuera de ámbito

@@ -1,0 +1,9 @@
+// Errores léxicos (línea 6: cadena sin cerrar; línea 8: comentario sin cerrar). Cada uno con línea y columna.
+int a = 1;
+int b = a @ 2;          // línea 3: carácter inválido '@'
+float c = 1.2.3;        // línea 4: número mal formado
+int d = 12abc;          // línea 5: número mal formado
+string s = "sin cerrar;
+int e = 2;
+/* este comentario nunca se cierra
+int f = 3;

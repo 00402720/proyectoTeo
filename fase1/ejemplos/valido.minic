@@ -1,0 +1,21 @@
+// Programa válido: no debe producir ningún error.
+int x = 5;
+float y = 2.5;
+string s = "hola";
+bool ok = x > 3 && y < 10.0;
+
+y = x * 2;              // int -> float se permite (ensanchamiento)
+string t = s + " mundo"; // string + string concatena
+
+int i = 0;
+while (i < 3) {
+    i = i + 1;
+}
+
+if (ok) {
+    int x = 100;        // sombra: otro ámbito, no es redeclaración
+    print x;
+} else {
+    print s;
+}
+print x;
